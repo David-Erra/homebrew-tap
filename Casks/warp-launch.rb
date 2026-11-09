@@ -12,6 +12,7 @@ cask "warp-launch" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
@@ -28,6 +29,8 @@ cask "warp-launch" do
 
   # No hi ha ~/.config/warp-launch: és la configuració de l'usuari.
   zap trash: [
+    "~/Library/Caches/cat.davide.warp-launch",
+    "~/Library/HTTPStorages/cat.davide.warp-launch",
     "~/Library/Preferences/cat.davide.warp-launch.plist",
     "~/Library/Saved Application State/cat.davide.warp-launch.savedState",
   ]
