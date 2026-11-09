@@ -1,6 +1,6 @@
 cask "warp-launch" do
-  version "0.31.4"
-  sha256 "eca658704c784575878bf392184446331151dbcdfdc6cfcc99e239fe127fd775"
+  version "0.31.5"
+  sha256 "e908f041934bc150abe8a53403cae5ebef3145a50dd4bca9a66f7c6d9a2b2718"
 
   url "https://github.com/David-Erra/warp-launch/releases/download/v#{version}/WarpLaunch-#{version}.zip"
   name "Warp Launch"
