@@ -18,13 +18,6 @@ cask "warp-launch" do
 
   app "Warp Launch.app"
 
-  # L'app encara no és notaritzada: sense això, macOS no la deixaria obrir. Quan ho sigui, es treu.
-  postflight_steps do
-    run "/usr/bin/xattr",
-        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/Warp Launch.app"],
-        must_succeed: false
-  end
-
   uninstall quit: "cat.davide.warp-launch"
 
   # No hi ha ~/.config/warp-launch: és la configuració de l'usuari.
